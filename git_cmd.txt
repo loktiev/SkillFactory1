@@ -1,0 +1,34 @@
+git init - to make your lockal folder REPOSITORY. git init - in terminal when your editor in your working folder on lockal computer.
+git remote add origin address - repository in githab. To connect/tie lockal and remote repositories.
+git add game_v2.py game.ipynb game.py add files to "stage (staging) area or index of git"- being ready to add to remote repository after git commit via git push.
+git commit -m "message ex: <Initial commit>" Команда Git для фиксации версий файлов (preparing to add to remote repo 	from staging area via: git push). git's remembered version all files and folders in lockal repo that   are staged 	or indexed and assign unique hash code for returnig the state- create a checkpoint.
+git checkout <commit's hash> to roll back to the commit with <commit's hash>. if you want to experiment with 	a specific, old revision and therefore need to have that revision's files in your working copy 	folder.
+git push <origin = name of remote repo> <branch of changes- 'master'>- to load changes from lockal to remote 	repo.
+git clone "url remote repository" - creat lockal repository from remote in current Folder. the lockal        				and remote Repo are tied.
+git pull <origin= name of remote repo> <name branch from which download commit- 'master'> - to download new 	version from remote 	repo to lockal repo in current fold or directory. We recieve on lockal repo 	all commits (all history) 	and we can do command <git checkout> as on original lockal repo.
+git branch - to see list of branches we have on lockal repo. *- current brench.
+git branch <name of new branch> creat new branch (in lockal repo) from current(where is user now). Current 	branch and new one will be without differences. to toggle on the brench with cetain name in lockal repo. Next new commits will 	be here. You can toggle between brenches at any time, the commits won't mix. 
+git push <origin> <feature> to load to remote repo- branch with its future name <feature>, from lockal 	branch, where you are now. So new branch <feature> is now on remote repo and others users can see it 	and work with.
+
+
+
+
+0. several lockal repos can be tied with one remote repo, lockal repos can be on different computers.
+1. Create remote Repository on GitHub ("+", New, Name, description, Publick, add README, add gitignore)
+2.Create TOKEN.(Setting in GiTHub accaunt, 'Developer setting', Personal access token, copy and keep safe the token). 
+3.Create lockal repository. VS Code( Система управления версиями (Source Control) в VS Code и нажмём на кнопку Инициализировать репозиторий (Init repository), or terminal GitBash - git init. 
+4. add files. ( VS Code '+' at file in list, GitBash git add game_v2.py)
+5. Осталось только зафиксировать все промежуточные изменения. Для этого нажимаем на кнопку Фиксация (символ галочки) в разделе Система управления версиями. GitBash git commit -m "Initial commit" Команда Git для фиксации версий файлов).
+6. Tie/synchronize repositoties. Для этого нажимаем на меню системы контроля версий (кнопка "...") и выбираем там Удалённый => Добавить удалённый репозиторий… Нам станет доступна строка для ввода URL для нашего удалённого репозитория. Копируем URL со страницы репозитория на GitHub и вставляем. Далее нас попросят дать этому репозиторию удалённое имя. Придумайте удобное для вас имя (вы вряд ли будете им пользоваться). После чего нажмите Enter.
+git remote add <удалённое_имя> https://github.com/<имя>/<имя_репозитория>
+7. branch in git - succession of commits with unique name. In each lockal or remote repo is at least one main branch - "master" or "main". We can creat our own branches. 
+8. merge branches - if we want our branch for example <feature> to be merged with master.
+	8.1 git checkout <master> - go over the branch where we are going to merge to.
+	8.2 git merge <feature> - <feature> is name of branch we want to merge with current branch (or where 		is  the user). In current branch <master> all branch <feature> is as single commit.
+9. git rebase <feature> - remove all commits history from <feature> to <master>, from original to purpose branch.
+	9.1 firstly you have to be on destination branch- git checkout <master>.
+
+
+
+
+
